@@ -6,7 +6,7 @@ Summary(pl):	Locale::PGetText - funkcje i18n napisane w czystym Perlu
 Name:		perl-Locale-PGetText
 Version:	0.16
 Release:	11
-License:	?
+License:	unknown
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	46211ef8740e5c1d4301b9478a2fef58
