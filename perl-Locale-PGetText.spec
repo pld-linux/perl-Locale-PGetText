@@ -1,11 +1,11 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Locale
 %define	pnam	PGetText
-Summary:	Locale::PGetText perl module
-Summary(pl):	Modu³ perla Locale::PGetText
+Summary:	Locale::PGetText -- pure perl i18n routines
+Summary(pl):	Locale::PGetText -- funkcje i18n napisane w czystym Perlu
 Name:		perl-Locale-PGetText
 Version:	0.16
-Release:	8
+Release:	9
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -15,10 +15,13 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Locale::PGetText - pure perl i18n routines.
+Locale::PGetText provides the same functionality as GNU gettext does, but
+it is written in pure perl and doesn't require any system locale stuff.
 
 %description -l pl
-Locale::PGetText - rutyny umiêdzynarodowiania napisane w czystym perlu.
+Locale::PGetText udostêpnia tak± sam± funkcjonalno¶æ, jak GNU gettext,
+ale jest napisany w czystym Perlu i nie potrzebuje ¿adnych specyficznych
+dla lokalizacji funkcji systemowych.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
@@ -32,14 +35,12 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-gzip -9nf README
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc README
 %attr(755,root,root) %{_bindir}/*
 %{perl_sitelib}/Locale/PGetText.pm
 %{_mandir}/man[13]/*
