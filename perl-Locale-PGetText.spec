@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Locale
 %define	pnam	PGetText
-Summary:	Locale-PGetText perl module
-Summary(pl):	Modu³ perla Locale-PGetText
+Summary:	Locale::PGetText perl module
+Summary(pl):	Modu³ perla Locale::PGetText
 Name:		perl-Locale-PGetText
 Version:	0.16
 Release:	8
@@ -15,10 +15,10 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Locale-PGetText - pure perl i18n routines.
+Locale::PGetText - pure perl i18n routines.
 
 %description -l pl
-Locale-PGetText - rutyny umiêdzynarodowiania napisane w czystym perlu.
+Locale::PGetText - rutyny umiêdzynarodowiania napisane w czystym perlu.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
