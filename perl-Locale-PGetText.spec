@@ -3,7 +3,7 @@ Summary:	Locale-PGetText perl module
 Summary(pl):	Modu³ perla Locale-PGetText
 Name:		perl-Locale-PGetText
 Version:	0.16
-Release:	4
+Release:	5
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
