@@ -5,11 +5,11 @@ Summary:	Locale::PGetText -- pure perl i18n routines
 Summary(pl):	Locale::PGetText -- funkcje i18n napisane w czystym Perlu
 Name:		perl-Locale-PGetText
 Version:	0.16
-Release:	10
+Release:	11
 License:	?
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl >= 5.6
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -27,7 +27,8 @@ dla lokalizacji funkcji systemowych.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 
 %install
@@ -42,5 +43,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc README
 %attr(755,root,root) %{_bindir}/*
-%{perl_sitelib}/Locale/PGetText.pm
+%{perl_vendorlib}/Locale/PGetText.pm
 %{_mandir}/man[13]/*
