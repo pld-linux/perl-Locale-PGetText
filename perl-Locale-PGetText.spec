@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Locale
 %define	pnam	PGetText
-Summary:	Locale::PGetText -- pure perl i18n routines
-Summary(pl):	Locale::PGetText -- funkcje i18n napisane w czystym Perlu
+Summary:	Locale::PGetText - pure Perl i18n routines
+Summary(pl):	Locale::PGetText - funkcje i18n napisane w czystym Perlu
 Name:		perl-Locale-PGetText
 Version:	0.16
 Release:	11
