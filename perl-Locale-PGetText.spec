@@ -25,7 +25,7 @@ Locale-PGetText - rutyny umiêdzynarodowiania napisane w czystym perlu.
 
 %build
 perl Makefile.PL
-make
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
