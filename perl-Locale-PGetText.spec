@@ -29,7 +29,7 @@ dla lokalizacji funkcji systemowych.
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make}
 
 %install
