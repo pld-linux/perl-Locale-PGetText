@@ -2,7 +2,7 @@
 %define		pdir	Locale
 %define		pnam	PGetText
 Summary:	Locale::PGetText - pure Perl i18n routines
-Summary(pl):	Locale::PGetText - funkcje i18n napisane w czystym Perlu
+Summary(pl.UTF-8):   Locale::PGetText - funkcje i18n napisane w czystym Perlu
 Name:		perl-Locale-PGetText
 Version:	0.16
 Release:	12
@@ -19,9 +19,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Locale::PGetText provides the same functionality as GNU gettext does, but
 it is written in pure perl and doesn't require any system locale stuff.
 
-%description -l pl
-Locale::PGetText udostêpnia tak± sam± funkcjonalno¶æ, jak GNU gettext,
-ale jest napisany w czystym Perlu i nie potrzebuje ¿adnych specyficznych
+%description -l pl.UTF-8
+Locale::PGetText udostÄ™pnia takÄ… samÄ… funkcjonalnoÅ›Ä‡, jak GNU gettext,
+ale jest napisany w czystym Perlu i nie potrzebuje Å¼adnych specyficznych
 dla lokalizacji funkcji systemowych.
 
 %prep
