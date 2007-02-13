@@ -2,7 +2,7 @@
 %define		pdir	Locale
 %define		pnam	PGetText
 Summary:	Locale::PGetText - pure Perl i18n routines
-Summary(pl.UTF-8):   Locale::PGetText - funkcje i18n napisane w czystym Perlu
+Summary(pl.UTF-8):	Locale::PGetText - funkcje i18n napisane w czystym Perlu
 Name:		perl-Locale-PGetText
 Version:	0.16
 Release:	12
